@@ -6,5 +6,16 @@
     <description>Updates for Launcher Remote Pro</description>
     <language>ko</language>
     <!-- Releases will be appended here by the build pipeline -->
+        <item>
+            <title>Launcher Remote Pro 1.1.0</title>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <pubDate>Thu, 07 May 2026 06:56:50 +0000</pubDate>
+            <enclosure
+                url="https://jeongjihun.github.io/launcher-remote-pro/releases/Launcher-Remote-Pro-1.1.0.dmg"
+                sparkle:edSignature="sparkle:edSignature="Y7ZsUsagzv/IWPmGhXO7dTJ9nZdnjhBt+mFxvR5pFiH2WNLz2cZz8CEdNHjP28Ut5iztsFG5mGV9V0cxnFbjCw==""
+                length="1842702"
+                type="application/octet-stream"/>
+        </item>
   </channel>
 </rss>
