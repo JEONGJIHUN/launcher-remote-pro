@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Launcher Remote Pro</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0d0d0f;
+      color: #e8e8ed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #1e1e22;
+    }
+    header h1 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #f5f5f7;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem;
+      text-align: center;
+      max-width: 720px;
+      width: 100%;
+    }
+    .badge {
+      display: inline-block;
+      background: #1c1c1e;
+      border: 1px solid #2c2c2e;
+      border-radius: 999px;
+      padding: 0.3rem 0.9rem;
+      font-size: 0.78rem;
+      color: #a0a0a8;
+      margin-bottom: 1.8rem;
+      letter-spacing: 0.02em;
+    }
+    h2 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: #f5f5f7;
+      margin-bottom: 1.25rem;
+    }
+    h2 span { color: #4a8cf7; }
+    .pitch {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #a0a0a8;
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .btn-primary {
+      background: #4a8cf7;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 0.85rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.18s, transform 0.12s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-primary:hover { background: #3a7ce6; transform: translateY(-1px); }
+    .btn-secondary {
+      background: #1c1c1e;
+      color: #a0a0a8;
+      border: 1px solid #2c2c2e;
+      border-radius: 12px;
+      padding: 0.85rem 1.6rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: border-color 0.18s, color 0.18s;
+    }
+    .btn-secondary:hover { border-color: #4a8cf7; color: #e8e8ed; }
+    .meta {
+      font-size: 0.82rem;
+      color: #606066;
+      margin-top: 0.4rem;
+    }
+    .meta a { color: #4a8cf7; text-decoration: none; }
+    .meta a:hover { text-decoration: underline; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin-top: 4rem;
+      width: 100%;
+    }
+    .feature-card {
+      background: #111113;
+      border: 1px solid #1e1e22;
+      border-radius: 14px;
+      padding: 1.4rem;
+      text-align: left;
+    }
+    .feature-card .icon { font-size: 1.6rem; margin-bottom: 0.7rem; }
+    .feature-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem; color: #f0f0f5; }
+    .feature-card p { font-size: 0.84rem; color: #70707a; line-height: 1.5; }
+    footer {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      border-top: 1px solid #1e1e22;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #505058;
+    }
+    footer a { color: #505058; text-decoration: none; }
+    footer a:hover { color: #a0a0a8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Launcher Remote Pro</h1>
+  </header>
+
+  <main>
+    <span class="badge">v1.0 · 2026 출시 예정</span>
+
+    <h2>데스크톱 앱을<br /><span>모바일</span>에서 한 번의 탭으로</h2>
+
+    <p class="pitch">
+      데스크톱 앱을 모바일에서 한 번의 탭으로 실행하세요.
+      Pro 버전은 즐겨찾는 앱의 안 읽은 알림 표시까지 보여줍니다.
+    </p>
+
+    <div class="actions">
+      <a class="btn-primary" href="releases/latest.dmg">
+        ↓ 다운로드 (데스크톱용)
+      </a>
+      <a class="btn-secondary" href="https://apps.apple.com/app/idTBD" target="_blank" rel="noopener">
+        App Store 버전
+      </a>
+    </div>
+
+    <p class="meta">
+      개인정보처리방침:
+      <a href="https://jeongjihun.github.io/maclauncher-privacy/" target="_blank" rel="noopener">
+        보기
+      </a>
+    </p>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>즉시 실행</h3>
+        <p>모바일에서 탭 한 번으로 데스크톱 앱을 바로 실행합니다.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔔</div>
+        <h3>알림 뱃지</h3>
+        <p>즐겨찾는 앱의 안 읽은 알림 수를 모바일에서 확인하세요.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">⚙️</div>
+        <h3>자동 업데이트</h3>
+        <p>Sparkle 기반으로 새 버전이 나오면 자동으로 업데이트됩니다.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Launcher Remote Pro</span>
+    <a href="https://jeongjihun.github.io/maclauncher-privacy/" target="_blank" rel="noopener">개인정보처리방침</a>
+    <a href="mailto:shuwoyo.support@gmail.com">shuwoyo.support@gmail.com</a>
+  </footer>
+</body>
+</html>
